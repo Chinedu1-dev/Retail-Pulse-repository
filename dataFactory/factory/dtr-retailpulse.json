@@ -1,0 +1,15 @@
+{
+	"name": "dtr-retailpulse",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c8b2e83a-7385-4743-859c-adedd5fe147e",
+		"tenantId": "b6812707-9b89-4a87-8ccd-b879dd862fa6"
+	}
+}
