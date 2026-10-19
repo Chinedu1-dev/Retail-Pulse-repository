@@ -1,0 +1,52 @@
+{
+	"name": "Inventory_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "inventory_snapshots.csv",
+				"container": "rtbronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "snapshot_date",
+				"type": "String"
+			},
+			{
+				"name": "store_id",
+				"type": "String"
+			},
+			{
+				"name": "product_id",
+				"type": "String"
+			},
+			{
+				"name": "on_hand_qty",
+				"type": "String"
+			},
+			{
+				"name": "on_order_qty",
+				"type": "String"
+			},
+			{
+				"name": "unit_cost",
+				"type": "String"
+			},
+			{
+				"name": "source_updated_at",
+				"type": "String"
+			}
+		]
+	}
+}
