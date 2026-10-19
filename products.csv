@@ -1,0 +1,501 @@
+product_id,product_name,category,unit_cost,list_price,reorder_level,active_flag
+P0001,Electronics Product 001,Electronics,130.86,171.67,5,Y
+P0002,Home Product 002,Home & Kitchen,210.19,330.74,15,Y
+P0003,Grocery Product 003,Grocery,35.44,74.43,10,Y
+P0004,Beauty Product 004,Beauty,22.58,30.85,5,Y
+P0005,Sports Product 005,Sports,183.91,272.5,25,N
+P0006,Fashion Product 006,Fashion,10.89,14.16,5,Y
+P0007,Electronics Product 007,Electronics,186.38,375.44,5,Y
+P0008,Home Product 008,Home & Kitchen,41.75,85.91,10,Y
+P0009,Grocery Product 009,Grocery,85.49,140.39,25,Y
+P0010,Beauty Product 010,Beauty,103.51,197.22,25,N
+P0011,Sports Product 011,Sports,130.38,277.27,10,N
+P0012,Fashion Product 012,Fashion,74.51,135.0,25,Y
+P0013,Electronics Product 013,Electronics,146.12,207.95,5,Y
+P0014,Home Product 014,Home & Kitchen,56.79,93.85,20,Y
+P0015,Grocery Product 015,Grocery,117.31,268.62,15,Y
+P0016,Beauty Product 016,Beauty,132.56,275.36,10,Y
+P0017,Sports Product 017,Sports,25.86,33.95,5,Y
+P0018,Fashion Product 018,Fashion,309.09,434.71,20,Y
+P0019,Electronics Product 019,Electronics,63.97,140.55,15,Y
+P0020,Home Product 020,Home & Kitchen,179.02,309.48,25,Y
+P0021,Grocery Product 021,Grocery,35.48,59.31,5,N
+P0022,Beauty Product 022,Beauty,15.17,20.3,25,Y
+P0023,Sports Product 023,Sports,79.13,120.16,20,Y
+P0024,Fashion Product 024,Fashion,87.26,143.71,25,Y
+P0025,Electronics Product 025,Electronics,120.8,248.29,25,Y
+P0026,Home Product 026,Home & Kitchen,305.11,436.47,25,Y
+P0027,Grocery Product 027,Grocery,313.98,423.08,5,Y
+P0028,Beauty Product 028,Beauty,203.81,271.07,10,Y
+P0029,Sports Product 029,Sports,21.77,44.38,5,Y
+P0030,Fashion Product 030,Fashion,13.5,25.13,5,N
+P0031,Electronics Product 031,Electronics,92.13,177.96,15,N
+P0032,Home Product 032,Home & Kitchen,205.0,373.79,15,Y
+P0033,Grocery Product 033,Grocery,80.01,130.02,15,Y
+P0034,Beauty Product 034,Beauty,47.99,67.71,10,Y
+P0035,Sports Product 035,Sports,29.6,38.18,5,Y
+P0036,Fashion Product 036,Fashion,171.37,348.65,25,Y
+P0037,Electronics Product 037,Electronics,5.32,7.46,10,N
+P0038,Home Product 038,Home & Kitchen,218.07,319.55,20,Y
+P0039,Grocery Product 039,Grocery,155.53,348.22,25,Y
+P0040,Beauty Product 040,Beauty,75.96,164.52,15,Y
+P0041,Sports Product 041,Sports,250.72,389.08,10,Y
+P0042,Fashion Product 042,Fashion,67.43,152.25,15,N
+P0043,Electronics Product 043,Electronics,77.01,143.39,15,Y
+P0044,Home Product 044,Home & Kitchen,214.13,329.67,10,Y
+P0045,Grocery Product 045,Grocery,235.89,399.81,10,N
+P0046,Beauty Product 046,Beauty,39.4,58.22,20,N
+P0047,Sports Product 047,Sports,213.71,343.55,10,Y
+P0048,Fashion Product 048,Fashion,208.07,348.08,10,Y
+P0049,Electronics Product 049,Electronics,136.37,237.62,25,Y
+P0050,Home Product 050,Home & Kitchen,7.48,16.31,25,N
+P0051,Grocery Product 051,Grocery,12.33,18.99,25,N
+P0052,Beauty Product 052,Beauty,87.38,144.89,15,Y
+P0053,Sports Product 053,Sports,208.42,408.87,10,N
+P0054,Fashion Product 054,Fashion,129.83,187.62,5,Y
+P0055,Electronics Product 055,Electronics,47.82,106.82,5,Y
+P0056,Home Product 056,Home & Kitchen,64.03,133.94,10,N
+P0057,Grocery Product 057,Grocery,297.68,418.72,25,Y
+P0058,Beauty Product 058,Beauty,210.48,286.86,20,N
+P0059,Sports Product 059,Sports,176.66,362.63,25,N
+P0060,Fashion Product 060,Fashion,247.01,402.19,25,Y
+P0061,Electronics Product 061,Electronics,270.53,364.31,25,Y
+P0062,Home Product 062,Home & Kitchen,67.34,146.51,5,Y
+P0063,Grocery Product 063,Grocery,61.07,106.43,15,Y
+P0064,Beauty Product 064,Beauty,269.33,369.02,15,N
+P0065,Sports Product 065,Sports,4.89,8.09,10,N
+P0066,Fashion Product 066,Fashion,95.37,190.75,5,Y
+P0067,Electronics Product 067,Electronics,31.59,58.34,25,Y
+P0068,Home Product 068,Home & Kitchen,227.73,424.59,25,Y
+P0069,Grocery Product 069,Grocery,158.75,235.86,15,Y
+P0070,Beauty Product 070,Beauty,128.42,166.82,10,Y
+P0071,Sports Product 071,Sports,221.26,433.29,10,Y
+P0072,Fashion Product 072,Fashion,119.55,226.28,25,Y
+P0073,Electronics Product 073,Electronics,57.08,131.75,20,Y
+P0074,Home Product 074,Home & Kitchen,166.02,276.26,5,Y
+P0075,Grocery Product 075,Grocery,14.52,27.91,15,Y
+P0076,Beauty Product 076,Beauty,207.14,409.18,5,Y
+P0077,Sports Product 077,Sports,41.42,69.48,25,Y
+P0078,Fashion Product 078,Fashion,224.97,443.61,5,N
+P0079,Electronics Product 079,Electronics,211.1,304.1,5,Y
+P0080,Home Product 080,Home & Kitchen,75.55,110.75,10,N
+P0081,Grocery Product 081,Grocery,109.23,168.66,25,Y
+P0082,Beauty Product 082,Beauty,175.85,286.92,15,N
+P0083,Sports Product 083,Sports,32.56,45.18,10,Y
+P0084,Fashion Product 084,Fashion,71.98,147.75,15,N
+P0085,Electronics Product 085,Electronics,14.64,23.14,15,N
+P0086,Home Product 086,Home & Kitchen,130.57,306.52,25,N
+P0087,Grocery Product 087,Grocery,116.8,232.88,5,Y
+P0088,Beauty Product 088,Beauty,141.02,292.1,10,Y
+P0089,Sports Product 089,Sports,174.74,312.47,15,Y
+P0090,Fashion Product 090,Fashion,198.06,421.84,25,Y
+P0091,Electronics Product 091,Electronics,72.25,156.77,25,Y
+P0092,Home Product 092,Home & Kitchen,306.47,416.49,5,Y
+P0093,Grocery Product 093,Grocery,78.77,119.78,5,Y
+P0094,Beauty Product 094,Beauty,228.52,368.66,5,Y
+P0095,Sports Product 095,Sports,122.05,240.69,15,Y
+P0096,Fashion Product 096,Fashion,34.5,46.43,25,Y
+P0097,Electronics Product 097,Electronics,262.85,405.69,15,N
+P0098,Home Product 098,Home & Kitchen,85.06,155.87,10,Y
+P0099,Grocery Product 099,Grocery,243.73,328.05,25,N
+P0100,Beauty Product 100,Beauty,280.13,399.75,10,N
+P0101,Sports Product 101,Sports,130.9,290.7,20,Y
+P0102,Fashion Product 102,Fashion,57.19,76.92,5,Y
+P0103,Electronics Product 103,Electronics,116.35,274.86,20,Y
+P0104,Home Product 104,Home & Kitchen,33.04,50.15,20,N
+P0105,Grocery Product 105,Grocery,3.46,7.25,20,Y
+P0106,Beauty Product 106,Beauty,166.73,249.19,5,Y
+P0107,Sports Product 107,Sports,147.78,295.12,20,Y
+P0108,Fashion Product 108,Fashion,162.7,321.92,5,Y
+P0109,Electronics Product 109,Electronics,103.17,149.8,10,Y
+P0110,Home Product 110,Home & Kitchen,213.43,294.09,25,N
+P0111,Grocery Product 111,Grocery,185.9,297.64,10,N
+P0112,Beauty Product 112,Beauty,25.79,46.69,10,Y
+P0113,Sports Product 113,Sports,62.47,123.02,20,Y
+P0114,Fashion Product 114,Fashion,245.94,437.99,5,N
+P0115,Electronics Product 115,Electronics,260.15,401.96,25,Y
+P0116,Home Product 116,Home & Kitchen,215.55,358.69,5,Y
+P0117,Grocery Product 117,Grocery,156.33,261.72,5,Y
+P0118,Beauty Product 118,Beauty,62.49,91.88,10,N
+P0119,Sports Product 119,Sports,55.71,129.94,20,N
+P0120,Fashion Product 120,Fashion,141.37,292.24,10,N
+P0121,Electronics Product 121,Electronics,323.31,423.5,5,Y
+P0122,Home Product 122,Home & Kitchen,228.0,412.11,20,Y
+P0123,Grocery Product 123,Grocery,8.96,11.88,20,Y
+P0124,Beauty Product 124,Beauty,150.17,195.54,20,Y
+P0125,Sports Product 125,Sports,315.42,433.81,20,N
+P0126,Fashion Product 126,Fashion,75.99,136.03,10,Y
+P0127,Electronics Product 127,Electronics,204.96,383.76,15,Y
+P0128,Home Product 128,Home & Kitchen,49.9,80.42,5,Y
+P0129,Grocery Product 129,Grocery,282.71,421.59,15,Y
+P0130,Beauty Product 130,Beauty,117.7,258.68,5,N
+P0131,Sports Product 131,Sports,216.37,278.68,25,Y
+P0132,Fashion Product 132,Fashion,40.85,67.34,5,Y
+P0133,Electronics Product 133,Electronics,271.53,395.43,10,Y
+P0134,Home Product 134,Home & Kitchen,212.08,315.17,25,Y
+P0135,Grocery Product 135,Grocery,86.72,164.97,10,N
+P0136,Beauty Product 136,Beauty,259.87,365.17,5,Y
+P0137,Sports Product 137,Sports,292.66,390.85,25,Y
+P0138,Fashion Product 138,Fashion,139.66,232.55,25,Y
+P0139,Electronics Product 139,Electronics,235.59,360.24,20,Y
+P0140,Home Product 140,Home & Kitchen,224.22,317.38,15,Y
+P0141,Grocery Product 141,Grocery,217.24,401.05,15,Y
+P0142,Beauty Product 142,Beauty,78.12,172.13,15,N
+P0143,Sports Product 143,Sports,113.57,262.33,10,Y
+P0144,Fashion Product 144,Fashion,130.57,212.19,20,Y
+P0145,Electronics Product 145,Electronics,83.84,132.51,5,Y
+P0146,Home Product 146,Home & Kitchen,8.05,18.57,20,Y
+P0147,Grocery Product 147,Grocery,203.96,371.06,5,Y
+P0148,Beauty Product 148,Beauty,37.42,61.54,25,Y
+P0149,Sports Product 149,Sports,173.02,347.65,10,Y
+P0150,Fashion Product 150,Fashion,127.19,282.19,5,Y
+P0151,Electronics Product 151,Electronics,17.12,28.0,15,Y
+P0152,Home Product 152,Home & Kitchen,159.5,245.58,10,N
+P0153,Grocery Product 153,Grocery,253.07,328.11,25,Y
+P0154,Beauty Product 154,Beauty,125.89,234.75,25,Y
+P0155,Sports Product 155,Sports,185.71,358.86,25,Y
+P0156,Fashion Product 156,Fashion,89.8,200.34,5,Y
+P0157,Electronics Product 157,Electronics,12.48,16.28,15,Y
+P0158,Home Product 158,Home & Kitchen,252.8,377.01,5,Y
+P0159,Grocery Product 159,Grocery,90.2,186.98,15,Y
+P0160,Beauty Product 160,Beauty,38.06,74.61,25,Y
+P0161,Sports Product 161,Sports,168.91,249.41,15,Y
+P0162,Fashion Product 162,Fashion,155.6,298.79,15,N
+P0163,Electronics Product 163,Electronics,294.77,429.92,15,Y
+P0164,Home Product 164,Home & Kitchen,161.14,251.69,5,N
+P0165,Grocery Product 165,Grocery,97.62,191.72,15,Y
+P0166,Beauty Product 166,Beauty,113.21,163.41,5,Y
+P0167,Sports Product 167,Sports,5.27,11.41,10,Y
+P0168,Fashion Product 168,Fashion,11.07,25.47,10,N
+P0169,Electronics Product 169,Electronics,259.68,385.68,25,N
+P0170,Home Product 170,Home & Kitchen,98.33,216.01,25,Y
+P0171,Grocery Product 171,Grocery,132.12,223.77,5,Y
+P0172,Beauty Product 172,Beauty,47.29,82.07,10,Y
+P0173,Sports Product 173,Sports,117.0,182.33,15,Y
+P0174,Fashion Product 174,Fashion,125.49,287.62,20,Y
+P0175,Electronics Product 175,Electronics,110.8,171.7,5,Y
+P0176,Home Product 176,Home & Kitchen,166.72,228.9,15,Y
+P0177,Grocery Product 177,Grocery,142.7,298.12,15,Y
+P0178,Beauty Product 178,Beauty,23.71,36.4,10,Y
+P0179,Sports Product 179,Sports,10.6,16.8,15,N
+P0180,Fashion Product 180,Fashion,265.54,423.4,25,Y
+P0181,Electronics Product 181,Electronics,115.81,177.74,10,Y
+P0182,Home Product 182,Home & Kitchen,128.78,208.92,10,N
+P0183,Grocery Product 183,Grocery,236.99,423.95,5,Y
+P0184,Beauty Product 184,Beauty,322.78,432.73,15,N
+P0185,Sports Product 185,Sports,41.0,92.13,10,Y
+P0186,Fashion Product 186,Fashion,21.26,49.85,10,Y
+P0187,Electronics Product 187,Electronics,31.32,47.03,20,Y
+P0188,Home Product 188,Home & Kitchen,19.62,36.68,20,Y
+P0189,Grocery Product 189,Grocery,163.2,380.97,10,N
+P0190,Beauty Product 190,Beauty,191.61,367.44,15,Y
+P0191,Sports Product 191,Sports,38.63,57.58,10,Y
+P0192,Fashion Product 192,Fashion,209.64,284.88,5,Y
+P0193,Electronics Product 193,Electronics,235.55,332.11,20,Y
+P0194,Home Product 194,Home & Kitchen,63.15,130.51,15,Y
+P0195,Grocery Product 195,Grocery,240.86,339.02,15,Y
+P0196,Beauty Product 196,Beauty,253.44,445.77,25,N
+P0197,Sports Product 197,Sports,119.3,170.55,25,Y
+P0198,Fashion Product 198,Fashion,118.29,156.66,5,Y
+P0199,Electronics Product 199,Electronics,222.3,386.99,15,Y
+P0200,Home Product 200,Home & Kitchen,234.56,339.14,25,Y
+P0201,Grocery Product 201,Grocery,37.91,50.89,5,Y
+P0202,Beauty Product 202,Beauty,164.92,229.84,25,N
+P0203,Sports Product 203,Sports,109.44,147.42,15,Y
+P0204,Fashion Product 204,Fashion,75.54,178.19,20,Y
+P0205,Electronics Product 205,Electronics,184.72,407.89,20,Y
+P0206,Home Product 206,Home & Kitchen,112.09,147.09,15,Y
+P0207,Grocery Product 207,Grocery,268.13,428.02,20,Y
+P0208,Beauty Product 208,Beauty,166.39,286.17,25,Y
+P0209,Sports Product 209,Sports,72.93,135.48,15,N
+P0210,Fashion Product 210,Fashion,210.21,304.27,5,Y
+P0211,Electronics Product 211,Electronics,251.6,357.25,25,Y
+P0212,Home Product 212,Home & Kitchen,27.26,45.59,5,Y
+P0213,Grocery Product 213,Grocery,18.91,30.61,25,Y
+P0214,Beauty Product 214,Beauty,149.01,201.48,20,Y
+P0215,Sports Product 215,Sports,74.48,161.16,20,Y
+P0216,Fashion Product 216,Fashion,47.64,68.63,25,Y
+P0217,Electronics Product 217,Electronics,127.84,280.11,10,N
+P0218,Home Product 218,Home & Kitchen,28.53,42.43,20,Y
+P0219,Grocery Product 219,Grocery,26.76,37.38,25,Y
+P0220,Beauty Product 220,Beauty,143.45,319.28,20,Y
+P0221,Sports Product 221,Sports,33.14,42.75,15,Y
+P0222,Fashion Product 222,Fashion,94.94,171.55,10,N
+P0223,Electronics Product 223,Electronics,279.06,366.7,25,Y
+P0224,Home Product 224,Home & Kitchen,306.74,443.77,20,N
+P0225,Grocery Product 225,Grocery,77.61,172.44,20,Y
+P0226,Beauty Product 226,Beauty,217.87,350.83,25,N
+P0227,Sports Product 227,Sports,144.62,193.78,10,Y
+P0228,Fashion Product 228,Fashion,32.54,54.48,15,Y
+P0229,Electronics Product 229,Electronics,5.92,10.05,5,Y
+P0230,Home Product 230,Home & Kitchen,13.91,30.05,15,Y
+P0231,Grocery Product 231,Grocery,37.46,57.3,10,Y
+P0232,Beauty Product 232,Beauty,212.31,336.99,5,Y
+P0233,Sports Product 233,Sports,240.39,433.17,10,N
+P0234,Fashion Product 234,Fashion,96.82,132.14,25,Y
+P0235,Electronics Product 235,Electronics,80.13,104.5,20,N
+P0236,Home Product 236,Home & Kitchen,8.01,10.41,25,Y
+P0237,Grocery Product 237,Grocery,17.94,24.21,20,N
+P0238,Beauty Product 238,Beauty,186.46,239.83,20,Y
+P0239,Sports Product 239,Sports,23.44,37.84,10,Y
+P0240,Fashion Product 240,Fashion,265.43,436.34,5,N
+P0241,Electronics Product 241,Electronics,191.14,285.08,10,Y
+P0242,Home Product 242,Home & Kitchen,133.88,207.27,25,N
+P0243,Grocery Product 243,Grocery,197.29,265.02,5,Y
+P0244,Beauty Product 244,Beauty,13.14,25.22,5,N
+P0245,Sports Product 245,Sports,316.88,427.93,10,N
+P0246,Fashion Product 246,Fashion,133.65,207.77,25,Y
+P0247,Electronics Product 247,Electronics,62.64,128.43,20,N
+P0248,Home Product 248,Home & Kitchen,115.65,211.35,25,N
+P0249,Grocery Product 249,Grocery,118.59,264.73,10,N
+P0250,Beauty Product 250,Beauty,339.94,438.61,20,Y
+P0251,Sports Product 251,Sports,193.51,315.68,10,Y
+P0252,Fashion Product 252,Fashion,101.77,142.74,25,N
+P0253,Electronics Product 253,Electronics,148.21,309.71,10,Y
+P0254,Home Product 254,Home & Kitchen,293.86,410.36,20,Y
+P0255,Grocery Product 255,Grocery,291.35,427.66,15,Y
+P0256,Beauty Product 256,Beauty,158.6,277.97,15,Y
+P0257,Sports Product 257,Sports,307.39,420.06,15,Y
+P0258,Fashion Product 258,Fashion,10.79,25.12,10,Y
+P0259,Electronics Product 259,Electronics,122.81,172.53,10,N
+P0260,Home Product 260,Home & Kitchen,210.68,444.34,10,Y
+P0261,Grocery Product 261,Grocery,150.08,269.39,5,N
+P0262,Beauty Product 262,Beauty,315.74,436.61,20,Y
+P0263,Sports Product 263,Sports,222.58,378.06,25,N
+P0264,Fashion Product 264,Fashion,98.29,189.59,20,Y
+P0265,Electronics Product 265,Electronics,22.0,30.09,10,N
+P0266,Home Product 266,Home & Kitchen,286.02,366.74,20,Y
+P0267,Grocery Product 267,Grocery,278.05,448.5,25,N
+P0268,Beauty Product 268,Beauty,263.91,347.2,20,Y
+P0269,Sports Product 269,Sports,195.01,383.09,15,Y
+P0270,Fashion Product 270,Fashion,95.86,205.49,20,N
+P0271,Electronics Product 271,Electronics,274.15,429.55,25,Y
+P0272,Home Product 272,Home & Kitchen,70.65,106.75,20,Y
+P0273,Grocery Product 273,Grocery,153.74,280.07,15,N
+P0274,Beauty Product 274,Beauty,36.75,55.53,20,Y
+P0275,Sports Product 275,Sports,165.11,236.54,20,Y
+P0276,Fashion Product 276,Fashion,171.86,236.47,20,Y
+P0277,Electronics Product 277,Electronics,155.86,250.6,20,Y
+P0278,Home Product 278,Home & Kitchen,223.34,395.11,25,Y
+P0279,Grocery Product 279,Grocery,27.82,64.64,20,Y
+P0280,Beauty Product 280,Beauty,219.39,341.04,5,N
+P0281,Sports Product 281,Sports,158.1,318.32,10,N
+P0282,Fashion Product 282,Fashion,27.93,65.69,10,Y
+P0283,Electronics Product 283,Electronics,101.82,161.01,15,N
+P0284,Home Product 284,Home & Kitchen,103.69,179.55,15,Y
+P0285,Grocery Product 285,Grocery,222.16,407.35,20,Y
+P0286,Beauty Product 286,Beauty,164.11,233.73,15,N
+P0287,Sports Product 287,Sports,116.85,181.46,15,N
+P0288,Fashion Product 288,Fashion,296.16,388.75,15,Y
+P0289,Electronics Product 289,Electronics,53.09,70.45,20,Y
+P0290,Home Product 290,Home & Kitchen,114.9,223.99,25,Y
+P0291,Grocery Product 291,Grocery,161.76,209.32,15,Y
+P0292,Beauty Product 292,Beauty,120.71,224.22,5,Y
+P0293,Sports Product 293,Sports,145.28,286.86,5,Y
+P0294,Fashion Product 294,Fashion,18.08,38.76,10,Y
+P0295,Electronics Product 295,Electronics,29.42,61.98,25,Y
+P0296,Home Product 296,Home & Kitchen,43.45,66.78,10,Y
+P0297,Grocery Product 297,Grocery,46.79,85.94,20,Y
+P0298,Beauty Product 298,Beauty,238.65,404.07,25,Y
+P0299,Sports Product 299,Sports,145.6,302.06,20,Y
+P0300,Fashion Product 300,Fashion,39.37,90.57,15,Y
+P0301,Electronics Product 301,Electronics,41.72,80.18,25,Y
+P0302,Home Product 302,Home & Kitchen,37.86,83.77,10,Y
+P0303,Grocery Product 303,Grocery,34.38,58.68,5,Y
+P0304,Beauty Product 304,Beauty,53.36,96.82,15,N
+P0305,Sports Product 305,Sports,153.11,229.02,20,Y
+P0306,Fashion Product 306,Fashion,15.92,22.49,5,Y
+P0307,Electronics Product 307,Electronics,127.83,284.42,5,Y
+P0308,Home Product 308,Home & Kitchen,295.9,393.74,25,Y
+P0309,Grocery Product 309,Grocery,16.72,32.18,25,Y
+P0310,Beauty Product 310,Beauty,250.77,363.76,15,N
+P0311,Sports Product 311,Sports,43.15,87.11,15,Y
+P0312,Fashion Product 312,Fashion,100.97,169.86,25,Y
+P0313,Electronics Product 313,Electronics,154.85,280.12,5,N
+P0314,Home Product 314,Home & Kitchen,145.28,210.83,20,Y
+P0315,Grocery Product 315,Grocery,10.89,21.32,20,Y
+P0316,Beauty Product 316,Beauty,239.34,322.44,20,Y
+P0317,Sports Product 317,Sports,142.31,232.7,20,Y
+P0318,Fashion Product 318,Fashion,30.62,52.69,25,Y
+P0319,Electronics Product 319,Electronics,122.77,242.01,25,N
+P0320,Home Product 320,Home & Kitchen,69.37,124.81,20,N
+P0321,Grocery Product 321,Grocery,7.47,13.93,25,Y
+P0322,Beauty Product 322,Beauty,53.3,99.09,15,Y
+P0323,Sports Product 323,Sports,43.17,58.29,5,Y
+P0324,Fashion Product 324,Fashion,178.84,269.15,20,Y
+P0325,Electronics Product 325,Electronics,213.51,356.18,20,N
+P0326,Home Product 326,Home & Kitchen,26.79,43.68,15,Y
+P0327,Grocery Product 327,Grocery,183.2,266.14,20,Y
+P0328,Beauty Product 328,Beauty,91.83,197.09,10,N
+P0329,Sports Product 329,Sports,72.3,131.28,10,Y
+P0330,Fashion Product 330,Fashion,182.91,292.43,15,Y
+P0331,Electronics Product 331,Electronics,126.71,163.46,15,Y
+P0332,Home Product 332,Home & Kitchen,138.77,274.57,25,Y
+P0333,Grocery Product 333,Grocery,23.89,50.29,25,Y
+P0334,Beauty Product 334,Beauty,54.69,114.45,5,Y
+P0335,Sports Product 335,Sports,46.0,88.02,20,N
+P0336,Fashion Product 336,Fashion,61.02,82.15,25,Y
+P0337,Electronics Product 337,Electronics,24.78,40.7,20,N
+P0338,Home Product 338,Home & Kitchen,145.16,187.63,20,Y
+P0339,Grocery Product 339,Grocery,30.9,54.86,5,Y
+P0340,Beauty Product 340,Beauty,319.27,436.41,10,N
+P0341,Sports Product 341,Sports,189.03,368.6,10,Y
+P0342,Fashion Product 342,Fashion,53.54,81.04,25,Y
+P0343,Electronics Product 343,Electronics,259.7,418.57,20,Y
+P0344,Home Product 344,Home & Kitchen,135.08,259.37,20,Y
+P0345,Grocery Product 345,Grocery,169.31,347.42,15,N
+P0346,Beauty Product 346,Beauty,85.42,149.04,15,Y
+P0347,Sports Product 347,Sports,117.12,230.89,15,Y
+P0348,Fashion Product 348,Fashion,35.89,56.1,5,Y
+P0349,Electronics Product 349,Electronics,83.97,133.44,15,Y
+P0350,Home Product 350,Home & Kitchen,43.71,73.69,25,Y
+P0351,Grocery Product 351,Grocery,106.15,242.0,10,Y
+P0352,Beauty Product 352,Beauty,72.5,154.79,20,Y
+P0353,Sports Product 353,Sports,25.78,33.2,25,Y
+P0354,Fashion Product 354,Fashion,105.63,148.45,5,Y
+P0355,Electronics Product 355,Electronics,78.72,118.32,15,Y
+P0356,Home Product 356,Home & Kitchen,217.8,343.3,15,Y
+P0357,Grocery Product 357,Grocery,122.09,214.85,15,Y
+P0358,Beauty Product 358,Beauty,120.93,160.25,25,Y
+P0359,Sports Product 359,Sports,287.49,374.63,15,Y
+P0360,Fashion Product 360,Fashion,41.2,60.31,5,Y
+P0361,Electronics Product 361,Electronics,205.04,422.56,10,N
+P0362,Home Product 362,Home & Kitchen,23.76,34.59,5,Y
+P0363,Grocery Product 363,Grocery,188.46,260.64,25,Y
+P0364,Beauty Product 364,Beauty,47.46,67.2,20,N
+P0365,Sports Product 365,Sports,45.36,94.72,20,Y
+P0366,Fashion Product 366,Fashion,55.7,78.1,10,Y
+P0367,Electronics Product 367,Electronics,183.11,301.01,15,N
+P0368,Home Product 368,Home & Kitchen,121.17,164.68,5,Y
+P0369,Grocery Product 369,Grocery,128.26,179.64,20,N
+P0370,Beauty Product 370,Beauty,111.37,200.42,5,Y
+P0371,Sports Product 371,Sports,111.45,210.89,10,Y
+P0372,Fashion Product 372,Fashion,202.94,337.69,25,Y
+P0373,Electronics Product 373,Electronics,80.58,108.33,5,Y
+P0374,Home Product 374,Home & Kitchen,108.25,175.83,5,N
+P0375,Grocery Product 375,Grocery,263.29,408.38,25,Y
+P0376,Beauty Product 376,Beauty,43.24,57.02,25,N
+P0377,Sports Product 377,Sports,153.7,284.33,20,N
+P0378,Fashion Product 378,Fashion,47.28,66.98,15,N
+P0379,Electronics Product 379,Electronics,171.94,280.93,15,Y
+P0380,Home Product 380,Home & Kitchen,283.51,402.78,25,Y
+P0381,Grocery Product 381,Grocery,38.59,72.5,10,Y
+P0382,Beauty Product 382,Beauty,79.5,115.58,15,Y
+P0383,Sports Product 383,Sports,12.45,19.92,10,Y
+P0384,Fashion Product 384,Fashion,253.27,344.29,10,Y
+P0385,Electronics Product 385,Electronics,112.52,157.23,10,Y
+P0386,Home Product 386,Home & Kitchen,39.3,54.23,20,N
+P0387,Grocery Product 387,Grocery,34.76,61.73,25,N
+P0388,Beauty Product 388,Beauty,170.53,359.8,15,Y
+P0389,Sports Product 389,Sports,72.77,107.02,10,Y
+P0390,Fashion Product 390,Fashion,211.79,325.42,15,N
+P0391,Electronics Product 391,Electronics,193.11,313.81,5,Y
+P0392,Home Product 392,Home & Kitchen,63.73,117.05,15,Y
+P0393,Grocery Product 393,Grocery,64.1,85.81,20,Y
+P0394,Beauty Product 394,Beauty,149.32,264.61,25,Y
+P0395,Sports Product 395,Sports,160.26,210.59,10,Y
+P0396,Fashion Product 396,Fashion,46.22,73.24,10,Y
+P0397,Electronics Product 397,Electronics,147.31,230.12,5,Y
+P0398,Home Product 398,Home & Kitchen,9.59,13.06,15,Y
+P0399,Grocery Product 399,Grocery,261.72,419.79,20,Y
+P0400,Beauty Product 400,Beauty,236.92,315.01,20,Y
+P0401,Sports Product 401,Sports,151.84,319.72,20,Y
+P0402,Fashion Product 402,Fashion,166.91,261.45,25,N
+P0403,Electronics Product 403,Electronics,132.74,193.74,20,Y
+P0404,Home Product 404,Home & Kitchen,316.94,420.79,25,Y
+P0405,Grocery Product 405,Grocery,94.74,205.62,20,Y
+P0406,Beauty Product 406,Beauty,320.03,443.25,25,Y
+P0407,Sports Product 407,Sports,45.44,60.47,5,Y
+P0408,Fashion Product 408,Fashion,237.92,392.1,10,Y
+P0409,Electronics Product 409,Electronics,151.12,268.12,15,Y
+P0410,Home Product 410,Home & Kitchen,15.88,29.37,10,N
+P0411,Grocery Product 411,Grocery,152.76,362.27,25,N
+P0412,Beauty Product 412,Beauty,86.42,153.41,15,Y
+P0413,Sports Product 413,Sports,183.39,244.14,25,N
+P0414,Fashion Product 414,Fashion,86.7,159.12,20,Y
+P0415,Electronics Product 415,Electronics,194.18,333.19,20,Y
+P0416,Home Product 416,Home & Kitchen,61.17,104.95,20,Y
+P0417,Grocery Product 417,Grocery,32.72,67.68,15,Y
+P0418,Beauty Product 418,Beauty,129.44,226.77,10,Y
+P0419,Sports Product 419,Sports,226.85,412.11,20,N
+P0420,Fashion Product 420,Fashion,170.56,263.36,15,N
+P0421,Electronics Product 421,Electronics,7.14,10.83,25,Y
+P0422,Home Product 422,Home & Kitchen,64.52,84.23,20,Y
+P0423,Grocery Product 423,Grocery,40.5,71.15,15,Y
+P0424,Beauty Product 424,Beauty,33.48,42.98,15,Y
+P0425,Sports Product 425,Sports,144.93,228.48,20,Y
+P0426,Fashion Product 426,Fashion,24.05,34.85,25,N
+P0427,Electronics Product 427,Electronics,73.15,98.41,20,Y
+P0428,Home Product 428,Home & Kitchen,47.05,96.29,10,Y
+P0429,Grocery Product 429,Grocery,12.54,21.26,25,N
+P0430,Beauty Product 430,Beauty,113.73,256.35,20,Y
+P0431,Sports Product 431,Sports,204.18,350.11,10,Y
+P0432,Fashion Product 432,Fashion,137.93,238.35,25,Y
+P0433,Electronics Product 433,Electronics,113.94,183.34,15,N
+P0434,Home Product 434,Home & Kitchen,35.97,74.08,20,Y
+P0435,Grocery Product 435,Grocery,295.49,388.49,5,Y
+P0436,Beauty Product 436,Beauty,88.55,171.12,10,Y
+P0437,Sports Product 437,Sports,165.37,291.58,25,Y
+P0438,Fashion Product 438,Fashion,7.76,16.3,25,N
+P0439,Electronics Product 439,Electronics,212.68,323.61,5,Y
+P0440,Home Product 440,Home & Kitchen,8.53,17.06,5,N
+P0441,Grocery Product 441,Grocery,71.37,107.83,5,Y
+P0442,Beauty Product 442,Beauty,6.3,13.77,20,Y
+P0443,Sports Product 443,Sports,174.8,360.96,25,Y
+P0444,Fashion Product 444,Fashion,149.43,295.47,20,N
+P0445,Electronics Product 445,Electronics,25.0,49.25,20,Y
+P0446,Home Product 446,Home & Kitchen,237.64,326.41,20,Y
+P0447,Grocery Product 447,Grocery,210.81,374.45,20,Y
+P0448,Beauty Product 448,Beauty,149.27,302.3,25,Y
+P0449,Sports Product 449,Sports,100.6,135.45,5,Y
+P0450,Fashion Product 450,Fashion,4.86,10.79,20,Y
+P0451,Electronics Product 451,Electronics,41.89,97.51,25,Y
+P0452,Home Product 452,Home & Kitchen,54.01,85.74,5,Y
+P0453,Grocery Product 453,Grocery,142.73,192.53,15,N
+P0454,Beauty Product 454,Beauty,200.26,368.76,10,N
+P0455,Sports Product 455,Sports,67.05,120.44,25,N
+P0456,Fashion Product 456,Fashion,138.26,267.68,15,Y
+P0457,Electronics Product 457,Electronics,160.43,282.75,25,N
+P0458,Home Product 458,Home & Kitchen,144.63,250.66,20,Y
+P0459,Grocery Product 459,Grocery,103.59,136.04,10,Y
+P0460,Beauty Product 460,Beauty,162.21,344.8,25,N
+P0461,Sports Product 461,Sports,233.11,391.47,10,N
+P0462,Fashion Product 462,Fashion,285.36,403.08,5,Y
+P0463,Electronics Product 463,Electronics,83.14,194.22,20,N
+P0464,Home Product 464,Home & Kitchen,76.6,124.56,20,Y
+P0465,Grocery Product 465,Grocery,147.13,286.9,20,Y
+P0466,Beauty Product 466,Beauty,48.29,67.01,10,Y
+P0467,Sports Product 467,Sports,269.93,443.06,5,N
+P0468,Fashion Product 468,Fashion,42.17,81.4,5,N
+P0469,Electronics Product 469,Electronics,9.87,13.18,5,Y
+P0470,Home Product 470,Home & Kitchen,36.02,57.4,20,Y
+P0471,Grocery Product 471,Grocery,78.65,126.95,5,N
+P0472,Beauty Product 472,Beauty,211.93,294.88,15,Y
+P0473,Sports Product 473,Sports,41.06,96.86,25,N
+P0474,Fashion Product 474,Fashion,49.04,65.91,5,Y
+P0475,Electronics Product 475,Electronics,250.14,393.88,25,N
+P0476,Home Product 476,Home & Kitchen,179.51,272.23,15,N
+P0477,Grocery Product 477,Grocery,62.21,83.04,25,Y
+P0478,Beauty Product 478,Beauty,106.76,191.35,25,Y
+P0479,Sports Product 479,Sports,103.08,235.92,10,Y
+P0480,Fashion Product 480,Fashion,54.17,79.0,10,Y
+P0481,Electronics Product 481,Electronics,26.66,41.85,20,Y
+P0482,Home Product 482,Home & Kitchen,63.96,114.18,5,N
+P0483,Grocery Product 483,Grocery,73.15,133.47,10,Y
+P0484,Beauty Product 484,Beauty,171.25,324.98,5,Y
+P0485,Sports Product 485,Sports,152.01,257.05,15,Y
+P0486,Fashion Product 486,Fashion,227.43,300.33,15,Y
+P0487,Electronics Product 487,Electronics,164.63,330.99,15,N
+P0488,Home Product 488,Home & Kitchen,9.71,18.88,10,Y
+P0489,Grocery Product 489,Grocery,118.32,269.81,25,N
+P0490,Beauty Product 490,Beauty,143.4,225.88,25,Y
+P0491,Sports Product 491,Sports,107.24,153.74,10,Y
+P0492,Fashion Product 492,Fashion,23.44,52.44,5,N
+P0493,Electronics Product 493,Electronics,196.89,329.04,25,Y
+P0494,Home Product 494,Home & Kitchen,179.5,311.34,20,Y
+P0495,Grocery Product 495,Grocery,81.96,114.65,10,N
+P0496,Beauty Product 496,Beauty,241.73,360.74,15,N
+P0497,Sports Product 497,Sports,79.76,126.1,15,Y
+P0498,Fashion Product 498,Fashion,75.03,165.63,20,Y
+P0499,Electronics Product 499,Electronics,193.9,413.2,25,Y
+P0500,Home Product 500,Home & Kitchen,248.4,427.86,5,N

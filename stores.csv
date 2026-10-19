@@ -1,0 +1,16 @@
+store_id,store_name,city,region,opening_date,store_status
+S001,Lagos Store 01,Lagos,Lagos,2018-03-15,Active
+S002,Abuja Store 02,Abuja,Abuja,2018-05-27,Active
+S003,Rivers Store 03,Rivers,Rivers,2018-08-08,Active
+S004,Oyo Store 04,Oyo,Oyo,2018-10-20,Active
+S005,Kano Store 05,Kano,Kano,2019-01-01,Active
+S006,Lagos Store 06,Lagos,Lagos,2019-03-15,Active
+S007,Abuja Store 07,Abuja,Abuja,2019-05-27,Active
+S008,Rivers Store 08,Rivers,Rivers,2019-08-08,Active
+S009,Oyo Store 09,Oyo,Oyo,2019-10-20,Active
+S010,Kano Store 10,Kano,Kano,2020-01-01,Active
+S011,Lagos Store 11,Lagos,Lagos,2020-03-14,Active
+S012,Abuja Store 12,Abuja,Abuja,2020-05-26,Active
+S013,Rivers Store 13,Rivers,Rivers,2020-08-07,Active
+S014,Oyo Store 14,Oyo,Oyo,2020-10-19,Active
+S015,Kano Store 15,Kano,Kano,2020-12-31,Inactive
