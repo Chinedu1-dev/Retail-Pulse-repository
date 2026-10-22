@@ -63,14 +63,7 @@
 			{
 				"name": "Inventory_Data",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Customer_Data",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -128,14 +121,7 @@
 			{
 				"name": "Product_Data",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Inventory_Data",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -193,14 +179,7 @@
 			{
 				"name": "Store_Data",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Product_Data",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -233,14 +212,7 @@
 			{
 				"name": "Sales_Batch_001",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Store_Data",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
