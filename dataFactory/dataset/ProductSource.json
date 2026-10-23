@@ -1,0 +1,52 @@
+{
+	"name": "ProductSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "products.csv",
+				"container": "retailpulse"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "String"
+			},
+			{
+				"name": "product_name",
+				"type": "String"
+			},
+			{
+				"name": "category",
+				"type": "String"
+			},
+			{
+				"name": "unit_cost",
+				"type": "String"
+			},
+			{
+				"name": "list_price",
+				"type": "String"
+			},
+			{
+				"name": "reorder_level",
+				"type": "String"
+			},
+			{
+				"name": "active_flag",
+				"type": "String"
+			}
+		]
+	}
+}
