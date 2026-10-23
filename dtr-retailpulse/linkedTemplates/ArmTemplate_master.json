@@ -19,6 +19,10 @@
 			"type": "string",
 			"defaultValue": "https://retailpulsedev.dfs.core.windows.net/"
 		},
+		"Event_trigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,6 +58,9 @@
 					},
 					"AzureDataLakeStorageLS_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorageLS_properties_typeProperties_url')]"
+					},
+					"Event_trigger_properties_typeProperties_scope": {
+						"value": "[parameters('Event_trigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

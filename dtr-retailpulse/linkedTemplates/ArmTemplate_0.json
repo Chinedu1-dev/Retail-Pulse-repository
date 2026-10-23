@@ -18,6 +18,10 @@
 		"AzureDataLakeStorageLS_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://retailpulsedev.dfs.core.windows.net/"
+		},
+		"Event_trigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
 		}
 	},
 	"variables": {
@@ -929,6 +933,37 @@
 				"[concat(variables('factoryId'), '/datasets/Inventory_sink')]",
 				"[concat(variables('factoryId'), '/datasets/Stores_Source')]",
 				"[concat(variables('factoryId'), '/datasets/Stores_sink')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Event_trigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "Retail_Pulse Pipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/retailpulse/blobs/sales_batch",
+					"blobPathEndsWith": ".csv",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('Event_trigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Retail_Pulse Pipeline')]"
 			]
 		}
 	]
