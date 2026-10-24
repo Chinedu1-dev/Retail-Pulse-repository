@@ -3,16 +3,6 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipeline": {
-			"pipelineReference": {
-				"referenceName": "Incremental pipeline",
-				"type": "PipelineReference"
-			},
-			"parameters": {
-				"startime": "@trigger().outputs.window.StartTime",
-				"endtime": "@trigger().outputs.window.EndTime"
-			}
-		},
 		"type": "TumblingWindowTrigger",
 		"typeProperties": {
 			"frequency": "Minute",
