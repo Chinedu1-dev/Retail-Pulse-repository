@@ -73,10 +73,12 @@
 		],
 		"parameters": {
 			"starttime": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@trigger().startTime"
 			},
 			"endtime": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@trigger().endTime"
 			}
 		},
 		"annotations": []
