@@ -18,10 +18,10 @@
 			"value": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
-			"value": "@trigger().output.windowStartTime"
+			"value": "@trigger().startTime"
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
-			"value": "@trigger().output.windowEndTime"
+			"value": "@trigger().endTime"
 		}
 	}
 }

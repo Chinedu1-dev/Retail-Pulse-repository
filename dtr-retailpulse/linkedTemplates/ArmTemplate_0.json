@@ -25,11 +25,11 @@
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
 			"type": "string",
-			"defaultValue": "@trigger().output.windowStartTime"
+			"defaultValue": "@trigger().startTime"
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
 			"type": "string",
-			"defaultValue": "@trigger().output.windowEndTime"
+			"defaultValue": "@trigger().endTime"
 		}
 	},
 	"variables": {
@@ -796,8 +796,8 @@
 						"dependsOn": [],
 						"policy": {
 							"timeout": "0.12:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
+							"retry": 1,
+							"retryIntervalInSeconds": 31,
 							"secureOutput": false,
 							"secureInput": false
 						},
@@ -1284,7 +1284,7 @@
 					"recurrence": {
 						"frequency": "Minute",
 						"interval": 4,
-						"startTime": "2026-10-24T03:01:00",
+						"startTime": "2026-10-24T04:44:00",
 						"timeZone": "W. Central Africa Standard Time"
 					}
 				}

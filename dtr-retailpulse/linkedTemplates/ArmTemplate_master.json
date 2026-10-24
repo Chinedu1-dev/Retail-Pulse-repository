@@ -25,11 +25,11 @@
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
 			"type": "string",
-			"defaultValue": "@trigger().output.windowStartTime"
+			"defaultValue": "@trigger().startTime"
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
 			"type": "string",
-			"defaultValue": "@trigger().output.windowEndTime"
+			"defaultValue": "@trigger().endTime"
 		},
 		"containerUri": {
 			"type": "string",
