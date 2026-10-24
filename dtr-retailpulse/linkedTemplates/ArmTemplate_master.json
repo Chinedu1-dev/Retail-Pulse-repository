@@ -23,13 +23,13 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
 		},
-		"Sales_trigger_properties_pipeline_parameters_startime": {
+		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
 			"type": "string",
-			"defaultValue": "@trigger().outputs.window.StartTime"
+			"defaultValue": "@trigger().output.windowStartTime"
 		},
-		"Sales_trigger_properties_pipeline_parameters_endtime": {
+		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
 			"type": "string",
-			"defaultValue": "@trigger().outputs.window.EndTime"
+			"defaultValue": "@trigger().output.windowEndTime"
 		},
 		"containerUri": {
 			"type": "string",
@@ -70,11 +70,11 @@
 					"Event_trigger_properties_typeProperties_scope": {
 						"value": "[parameters('Event_trigger_properties_typeProperties_scope')]"
 					},
-					"Sales_trigger_properties_pipeline_parameters_startime": {
-						"value": "[parameters('Sales_trigger_properties_pipeline_parameters_startime')]"
+					"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
+						"value": "[parameters('tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime')]"
 					},
-					"Sales_trigger_properties_pipeline_parameters_endtime": {
-						"value": "[parameters('Sales_trigger_properties_pipeline_parameters_endtime')]"
+					"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
+						"value": "[parameters('tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime')]"
 					}
 				}
 			},
