@@ -10,8 +10,8 @@
 					"type": "PipelineReference"
 				},
 				"parameters": {
-					"starttime": "@trigger().output.windowStartTime",
-					"endtime": "@trigger().output.windowEndTime"
+					"starttime": "@trigger().startTime",
+					"endtime": "@trigger().endTime"
 				}
 			}
 		],
@@ -20,7 +20,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 4,
-				"startTime": "2026-10-24T03:01:00",
+				"startTime": "2026-10-24T04:44:00",
 				"timeZone": "W. Central Africa Standard Time"
 			}
 		}
