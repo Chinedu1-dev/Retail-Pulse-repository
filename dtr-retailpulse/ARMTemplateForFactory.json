@@ -22,6 +22,14 @@
 		"Event_trigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
+		},
+		"Sales_trigger_properties_pipeline_parameters_startime": {
+			"type": "string",
+			"defaultValue": "@trigger().outputs.window.StartTime"
+		},
+		"Sales_trigger_properties_pipeline_parameters_endtime": {
+			"type": "string",
+			"defaultValue": "@trigger().outputs.window.EndTime"
 		}
 	},
 	"variables": {
@@ -52,6 +60,14 @@
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
 									"recursive": true,
+									"modifiedDatetimeStart": {
+										"value": "@pipeline().parameters.startime",
+										"type": "Expression"
+									},
+									"modifiedDatetimeEnd": {
+										"value": "@pipeline().parameters.endtime",
+										"type": "Expression"
+									},
 									"wildcardFolderPath": "Sales",
 									"wildcardFileName": "*",
 									"enablePartitionDiscovery": false
@@ -99,6 +115,14 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"startime": {
+						"type": "string"
+					},
+					"endtime": {
+						"type": "string"
+					}
 				},
 				"annotations": []
 			},
@@ -1237,6 +1261,40 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/Retail_Pulse Pipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Sales_trigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipeline": {
+					"pipelineReference": {
+						"referenceName": "Incremental pipeline",
+						"type": "PipelineReference"
+					},
+					"parameters": {
+						"startime": "[parameters('Sales_trigger_properties_pipeline_parameters_startime')]",
+						"endtime": "[parameters('Sales_trigger_properties_pipeline_parameters_endtime')]"
+					}
+				},
+				"type": "TumblingWindowTrigger",
+				"typeProperties": {
+					"frequency": "Minute",
+					"interval": 5,
+					"startTime": "2026-10-24T01:59:00Z",
+					"delay": "00:00:00",
+					"maxConcurrency": 50,
+					"retryPolicy": {
+						"intervalInSeconds": 30
+					},
+					"dependsOn": []
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Incremental pipeline')]"
 			]
 		}
 	]

@@ -17,6 +17,12 @@
 		"Event_trigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
 		},
+		"Sales_trigger_properties_pipeline_parameters_startime": {
+			"value": "@trigger().outputs.window.StartTime"
+		},
+		"Sales_trigger_properties_pipeline_parameters_endtime": {
+			"value": "@trigger().outputs.window.EndTime"
+		},
 		"containerUri": {
 			"value": ""
 		},
