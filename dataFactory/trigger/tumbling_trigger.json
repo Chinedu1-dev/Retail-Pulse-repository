@@ -1,0 +1,28 @@
+{
+	"name": "tumbling_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Inject_Sales_Incr pipeline",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"starttime": "@trigger().output.windowStartTime",
+					"endtime": "@trigger().output.windowEndTime"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 4,
+				"startTime": "2026-10-24T03:01:00",
+				"timeZone": "W. Central Africa Standard Time"
+			}
+		}
+	}
+}
