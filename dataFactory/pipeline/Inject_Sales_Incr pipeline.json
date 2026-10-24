@@ -59,13 +59,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Sales_Source2",
+						"referenceName": "Sales_Source3",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Sales_sink2",
+						"referenceName": "Sales_sink3",
 						"type": "DatasetReference"
 					}
 				]
