@@ -17,6 +17,15 @@
 		"Event_trigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
 		},
+		"trigger1_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
+			"value": "@pipeline().parameters.TriggerTime"
+		},
+		"trigger1_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
+			"value": "@pipeline().parameters.TriggerTime"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
+		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
 			"value": "@trigger().startTime"
 		},

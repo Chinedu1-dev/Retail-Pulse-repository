@@ -23,6 +23,18 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
 		},
+		"trigger1_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
+			"type": "string",
+			"defaultValue": "@pipeline().parameters.TriggerTime"
+		},
+		"trigger1_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
+			"type": "string",
+			"defaultValue": "@pipeline().parameters.TriggerTime"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/5b59bffa-e56d-4226-9daa-3c709bce7020/resourceGroups/DENG-2/providers/Microsoft.Storage/storageAccounts/retailpulsedev"
+		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_starttime": {
 			"type": "string",
 			"defaultValue": "@trigger().startTime"
@@ -60,14 +72,6 @@
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
 									"recursive": true,
-									"modifiedDatetimeStart": {
-										"value": "@pipeline().parameters.starttime",
-										"type": "Expression"
-									},
-									"modifiedDatetimeEnd": {
-										"value": "@pipeline().parameters.endtime",
-										"type": "Expression"
-									},
 									"wildcardFolderPath": "Sales",
 									"wildcardFileName": "*",
 									"enablePartitionDiscovery": false
@@ -118,10 +122,12 @@
 				},
 				"parameters": {
 					"starttime": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "@trigger().startTime"
 					},
 					"endtime": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "@trigger().endTime"
 					}
 				},
 				"annotations": []
@@ -1373,7 +1379,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1399,12 +1405,46 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "Inject_Sales_Incr pipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {
+							"starttime": "[parameters('trigger1_properties_Inject_Sales_Incr pipeline_parameters_starttime')]",
+							"endtime": "[parameters('trigger1_properties_Inject_Sales_Incr pipeline_parameters_endtime')]"
+						}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/retailpulse/blobs/Sales",
+					"blobPathEndsWith": ".csv",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Inject_Sales_Incr pipeline')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/tumbling_trigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
