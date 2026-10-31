@@ -11,6 +11,12 @@
 		"AzureDataLakeStorageLS_accountKey": {
 			"value": ""
 		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStoragels02_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorageLS_properties_typeProperties_url": {
 			"value": "https://retailpulsedev.dfs.core.windows.net/"
 		},
@@ -31,6 +37,18 @@
 		},
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
 			"value": "@trigger().endTime"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "retailpulse-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "retail-sql-database"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "retail-admin"
+		},
+		"AzureDataLakeStoragels02_properties_typeProperties_url": {
+			"value": "https://retailpulsedeng02.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""

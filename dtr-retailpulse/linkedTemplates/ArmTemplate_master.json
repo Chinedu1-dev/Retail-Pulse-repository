@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorageLS'"
 		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"AzureDataLakeStoragels02_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStoragels02'"
+		},
 		"AzureDataLakeStorageLS_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://retailpulsedev.dfs.core.windows.net/"
@@ -42,6 +50,22 @@
 		"tumbling_trigger_properties_Inject_Sales_Incr pipeline_parameters_endtime": {
 			"type": "string",
 			"defaultValue": "@trigger().endTime"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "retailpulse-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "retail-sql-database"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "retail-admin"
+		},
+		"AzureDataLakeStoragels02_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retailpulsedeng02.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -76,8 +100,26 @@
 					"AzureDataLakeStorageLS_accountKey": {
 						"value": "[parameters('AzureDataLakeStorageLS_accountKey')]"
 					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"AzureDataLakeStoragels02_accountKey": {
+						"value": "[parameters('AzureDataLakeStoragels02_accountKey')]"
+					},
 					"AzureDataLakeStorageLS_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorageLS_properties_typeProperties_url')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"AzureDataLakeStoragels02_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStoragels02_properties_typeProperties_url')]"
 					}
 				}
 			},
