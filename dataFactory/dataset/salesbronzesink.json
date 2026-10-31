@@ -1,0 +1,23 @@
+{
+	"name": "salesbronzesink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoragels02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "bronze/sales",
+				"fileSystem": "retailpulse"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

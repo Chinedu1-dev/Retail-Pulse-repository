@@ -1,0 +1,50 @@
+{
+	"name": "AzureSqlCustomersink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "varchar"
+			},
+			{
+				"name": "customer_name",
+				"type": "varchar"
+			},
+			{
+				"name": "gender",
+				"type": "varchar"
+			},
+			{
+				"name": "signup_date",
+				"type": "date"
+			},
+			{
+				"name": "loyalty_tier",
+				"type": "varchar"
+			},
+			{
+				"name": "home_region",
+				"type": "varchar"
+			},
+			{
+				"name": "dq_status",
+				"type": "varchar"
+			},
+			{
+				"name": "created_dt",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "silver",
+			"table": "customers"
+		}
+	}
+}
