@@ -72,8 +72,6 @@
 						"name": "ForEachInvenFile",
 						"description": "this activity iterate through the files",
 						"type": "ForEach",
-						"state": "Inactive",
-						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "GetInventoryfile",
@@ -195,8 +193,6 @@
 						"name": "ForEachRefFile",
 						"description": "This activity iterate through the files",
 						"type": "ForEach",
-						"state": "Inactive",
-						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "GetReferencefile",
@@ -316,6 +312,8 @@
 						"name": "ForEachSalesFile",
 						"description": "This activity iterate through the files",
 						"type": "ForEach",
+						"state": "Inactive",
+						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "GetSalesfile",
