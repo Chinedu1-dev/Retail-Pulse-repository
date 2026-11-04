@@ -1,0 +1,15 @@
+{
+	"name": "RetailPulse-df-02",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "132bb7b4-8e5e-4783-b3a7-3988ee7a5f36",
+		"tenantId": "b6812707-9b89-4a87-8ccd-b879dd862fa6"
+	}
+}
