@@ -1,0 +1,23 @@
+{
+	"name": "SalesBronzSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageLSR",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "bronze/sales",
+				"fileSystem": "retailpulse"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

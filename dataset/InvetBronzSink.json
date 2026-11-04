@@ -1,0 +1,23 @@
+{
+	"name": "InvetBronzSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageLSR",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "bronze/inventory",
+				"fileSystem": "retailpulse"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
