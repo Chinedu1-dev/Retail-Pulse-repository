@@ -1,0 +1,12 @@
+{
+	"name": "AzureDataLakeStorageLSR",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://retailpulsedeng02.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDBFNzUxMEI5LTZGMTctNDRGMi05RkY3LTYwQ0VFMzI2RTc3Q18wMDk0NzI4NC1lOWQ2LTRhOGYtOWEwMS1jNzBjMjA5NWQzYzkiDQp9"
+		}
+	}
+}
