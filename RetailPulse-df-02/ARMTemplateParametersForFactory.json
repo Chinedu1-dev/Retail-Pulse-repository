@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "RetailPulse-df-02"
+		},
+		"AzureDataLakeStorageLSR_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_LS2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorageLSR_properties_typeProperties_url": {
+			"value": "https://retailpulsedeng02.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage_LS2_properties_typeProperties_url": {
+			"value": "https://retailpulsedeng02.dfs.core.windows.net/"
+		}
+	}
+}
